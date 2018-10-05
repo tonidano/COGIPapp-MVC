@@ -8,10 +8,16 @@ Nous devions réaliser une web application qui réponde aux consignes suivantes 
 
 > https://github.com/becodeorg/Johnson2/tree/master/projets/COGIPapp
 
+## Aperçu
+
+>[Site]
+<img src="/assets/img/tables_relationnelles.png"/>
 
 ## Comment ?
 
-En utilisant HTML, CSS, JS, PHP et SQL.
+Langage: HTML, CSS (+ Bootstrap4), JS, PHP SQL.
+Outil de création de tables relationnelles : Workbench.
+
 
 ## Quand ?
 
