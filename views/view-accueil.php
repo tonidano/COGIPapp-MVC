@@ -5,7 +5,7 @@
 
 <div>
      <h2>Factures</h2>
-     <div class="table-responsive">
+     <div class="table-responsive col-md-10 offset-md-1">
       <table class="table table-bordered table-hover">
         <thead class="table-primary">
           <tr>
@@ -41,7 +41,7 @@
 
 <div>
      <h2>Annuaire</h2>
-     <div class="table-responsive">
+     <div class="table-responsive col-md-10 offset-md-1">
       <table class="table table-bordered table-hover">
         <thead class="table-primary">
           <tr>
@@ -83,7 +83,7 @@
 
 <div>
      <h2>Sociétés</h2>
-     <div class="table-responsive">
+     <div class="table-responsive col-md-10 offset-md-1">
       <table class="table table-bordered table-hover">
         <thead class="table-primary">
           <tr>
