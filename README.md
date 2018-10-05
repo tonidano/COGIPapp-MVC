@@ -19,7 +19,7 @@ Nous devions réaliser une web application qui réponde aux consignes suivantes 
 * Outil de création de tables relationnelles : Workbench.
 
 >[Tables relationnelles]
-<img src="/assets/img/tables_relationnelles.png"/>
+<img src="/assets/img/apercu.png"/>
 
 ## Quand ?
 
