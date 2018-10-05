@@ -10,14 +10,15 @@ Nous devions réaliser une web application qui réponde aux consignes suivantes 
 
 ## Aperçu
 
->[Site]
-<img src="/assets/img/tables_relationnelles.png"/>
+
 
 ## Comment ?
 
 Langage: HTML, CSS (+ Bootstrap4), JS, PHP SQL.
 Outil de création de tables relationnelles : Workbench.
 
+>[Tables relationnelles]
+<img src="/assets/img/tables_relationnelles.png"/>
 
 ## Quand ?
 
