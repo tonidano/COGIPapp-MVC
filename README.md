@@ -1,6 +1,6 @@
 # Projet COGIPapp-MVC
 
-Ajout du système d'architecture logicielle MVC (Model-View-Controller) 
+COGIPapp est une application comptable qui permet de gérer des bases de données.
 
 ## Description
 Projet réalisé pendant la formation Becode (Bruxelles).
@@ -10,7 +10,8 @@ Nous devions réaliser une web application qui réponde aux consignes suivantes 
 
 ## Aperçu
 
-
+>[Aperçu du site]
+<img src="/assets/img/tables_relationnelles.png"/>
 
 ## Comment ?
 
