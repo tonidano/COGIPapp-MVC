@@ -11,7 +11,7 @@ Nous devions réaliser une web application qui réponde aux consignes suivantes 
 ## Aperçu
 
 >[Aperçu du site]
-<img src="/assets/img/tables_relationnelles.png"/>
+<img src="/assets/img/apercu.PNG"/>
 
 ## Comment ?
 
@@ -19,7 +19,7 @@ Nous devions réaliser une web application qui réponde aux consignes suivantes 
 * Outil de création de tables relationnelles : Workbench.
 
 >[Tables relationnelles]
-<img src="/assets/img/apercu.png"/>
+<img src="/assets/img/tables_relationnelles.png"/>
 
 ## Quand ?
 
