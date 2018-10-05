@@ -1,38 +1,33 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Modifier la facture</title>
-  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-</head>
-<body>
+<title>Modification facture</title>
   <div class="container-fluid">
-	<a href="./index.php">Accueil</a>
+
     <?php if (!isset($_POST['button'])) {
     ?>
-	<h2>Modifier</h2>
+	<h2>Modifier les infos de la facture</h2>
 	<form action="./?page=updatefacture" method="post" id="forme">
-		<div>
+		<div class="form-group col-md-2 offset-md-5">
 			<label for="numero">Numéro</label>
-			<input type="number" name="numero" value="<?= $donnees['numero']?>">
+			<input class="form-control" type="number" name="numero" value="<?= $donnees['numero']?>">
 		</div>
 
-			<div>
+			<div class="form-group col-md-2 offset-md-5">
 			<label for="date_facture">Date</label>
-			<input type="date" name="date_facture" value="<?= $donnees['date_facture']; ?>">
+			<input class="form-control" type="date" name="date_facture" value="<?= $donnees['date_facture']; ?>">
 		</div>
-		<div>
+		<div class="form-group col-md-2 offset-md-5">
 			<label for="motif_prestation">Prestation</label>
-			<input type="text" name="motif_prestation" value="<?= $donnees['motif_prestation']; ?>">
+			<input class="form-control" type="text" name="motif_prestation" value="<?= $donnees['motif_prestation']; ?>">
 
 		</div>
 
 		<input type="hidden" name="idfacture" value="<?= $_GET['id']; ?>">
-		<button type="submit" name="button">Modifier</button>
+		<button class="btn btn-primary col-md-2 offset-md-5" type="submit" name="button">Modifier</button>
 	</form>
-	</div>
+
 <?php
 } else {
         echo $donnees;
         // var_dump($confirm);
     } ?>
+</div>
+</div>

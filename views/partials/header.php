@@ -1,11 +1,42 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Accueil</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    </head>
-
 <body>
+<div class="header">
+
+    <div class="jumbotron">
+        <img class="logo" src="assets/img/logo.PNG" alt="logo">
+    </div>
+
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="#">GOCIP
+    <!-- <img src="assets/img/logo.PNG" alt="logo" style="width:75px;"> -->
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+  <!-- Links -->
+<div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="./?page=accueil">Accueil</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="./?page=facture">Factures</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="./?page=client">Annuaire</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="./?page=societe">Sociétés</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="./?page=listeclient">Clients</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="./?page=listefournisseur">Fournisseurs</a>
+    </li>
+  </ul>
+  </div>
+</nav>
+
+</div>

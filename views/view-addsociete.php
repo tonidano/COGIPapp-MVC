@@ -1,42 +1,34 @@
-
-
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>ajout</title>
-  </head>
-<body>
-  	<a href="./index.php">Accueil</a>
+  <title>Ajout société</title>
+<div class="container-fluid">
   <?php if (!isset($_POST['ajouter'])) {
     ?>
-  <h1>Ajouter</h1>
+  <h2>Ajouter une société</h2>
   <form action="./?page=addsociete" method="post">
-    <div>
+    <div class="form-group col-md-2 offset-md-5">
  			<label for="nom_societe">Nom de la société</label>
- 			<input type="text" name="nom_societe" value="">
+ 			<input class="form-control" type="text" name="nom_societe" placeholder="Société" value="">
  		</div>
 
- 			<div>
+ 			<div class="form-group col-md-2 offset-md-5">
  			<label for="adresse">Adresse</label>
- 			<input type="text" name="adresse" value="">
+ 			<input class="form-control" type="text" name="adresse" placeholder="Adresse" value="">
  		</div>
- 		<div>
- 			<label for="pays">pays</label>
- 			<input type="text" name="pays" value="">
+ 		<div class="form-group col-md-2 offset-md-5">
+ 			<label for="pays">Pays</label>
+ 			<input class="form-control" type="text" name="pays" placeholder="Pays" value="">
  		</div>
 
-    <div>
+    <div class="form-group col-md-2 offset-md-5">
  			<label for="telephone_societe">Téléphone</label>
- 			<input type="number" name="telephone_societe" value="">
+ 			<input class="form-control" type="number" name="telephone_societe" placeholder="Téléphone" value="">
  		</div>
-    <div>
+    <div class="form-group col-md-2 offset-md-5">
  			<label for="num_tva">Numéro de TVA</label>
- 			<input type="number" name="num_tva" value="">
+ 			<input class="form-control" type="number" name="num_tva" placeholder="TVA" value="">
  		</div>
-    <div>
+    <div class="form-group col-md-2 offset-md-5">
       <label>Type</label>
-      <select name="type_idtype">
+      <select class="form-control" name="type_idtype">
       <?php foreach ($resultat as $key => $donnees) {
         ?>
         <option value="<?= $donnees['type_idtype']; ?>"><?= $donnees['type']; ?></option>
@@ -45,9 +37,10 @@
       </select>
     </div>
 
-    <button type="submit" name="ajouter">Ajouter</button>
+    <button class="btn btn-primary col-md-2 offset-md-5" type="submit" name="ajouter">Ajouter</button>
   </form>
   <?php
 } else {
         echo $resultat;
     } ?>
+</div>

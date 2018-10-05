@@ -1,12 +1,17 @@
-<a href="./index.php">Accueil</a>
-<h1>Clients</h1>
-        <table class="table">
-            <tr class="info">
+  <title>Annuaire</title>
+<div class="container-fluid">
+<h2>Clients</h2>
+<div class="table-responsive">
+ <table class="table table-bordered table-hover">
+   <thead class="table-primary">
+            <tr >
                 <th>Nom</th>
                 <th>Prénom</th>
                 <th>Téléphone</th>
                 <th>E-mail</th>
             </tr>
+          </thead>
+          <tbody>
 <?php foreach ($resultat as $key => $donnees) {
     ?>
             <tr>
@@ -18,4 +23,7 @@
 <?php
 }
 ?>
+</tbody>
         </table>
+</div>
+</div>

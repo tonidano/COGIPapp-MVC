@@ -1,35 +1,28 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>ajout</title>
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-  </head>
-<body>
+  <title>Ajout facture</title>
     <div class="container-fluid">
-  	<a href="./index.php">Accueil</a>
-
   <?php if (!isset($_POST['ajouter'])) {
     ?>
-  <h2>Ajouter</h2>
-  <div class="col-lg-6 col-lg-offset-3">
-  <form action="./?page=addfacture" method="post">
-    <div>
+  <h2>Ajouter une facture</h2>
+    <form action="./?page=addfacture" method="post">
+
+    <div class="form-group col-md-2 offset-md-5">
  			<label for="numero">Numéro</label>
- 			<input type="number" name="numero" value="">
+ 			<input class="form-control" type="number" placeholder="Numéro" name="numero" value="">
+    </div>
+ 			<div class="form-group col-md-2 offset-md-5">
+ 			<label for="date_facture">Date</label>
+ 			<input class="form-control" type="date" name="date_facture" value="">
  		</div>
 
- 			<div>
- 			<label for="date_facture">Date</label>
- 			<input type="date" name="date_facture" value="">
- 		</div>
- 		<div>
+ 		<div class="form-group col-md-2 offset-md-5">
  			<label for="motif_prestation">Prestation</label>
- 			<input type="text" name="motif_prestation" value="">
+ 			<input class="form-control" type="text" placeholder="Prestation" name="motif_prestation" value="">
  		</div>
-    <div>
+
+    <div class="form-group col-md-2 offset-md-5">
       <label>Nom de la société</label>
-      <select name="idsocietes">
+      <select class="form-control" name="idsocietes">
+
       <?php foreach ($resultat as $key => $donnees) {
         ?>
           <option value="<?= $donnees['idsocietes']; ?>"><?= $donnees['nom_societe']; ?></option>
@@ -37,9 +30,10 @@
     } ?>
       </select>
     </div>
-    <div>
+
+    <div class="form-group col-md-2 offset-md-5">
       <label>Nom client</label>
-      <select name="idannuaire">
+      <select class="form-control" name="idannuaire">
       <?php foreach ($resultat as $key => $donnees) {
         ?>
         <option value="<?= $donnees['idannuaire']; ?>"><?= $donnees['nom']; ?></option>
@@ -49,12 +43,15 @@
 
       </select>
     </div>
-    <button type="submit" name="ajouter">Ajouter</button>
+
+    <button class="btn btn-primary col-md-2 offset-md-5" type="submit" name="ajouter">Ajouter</button>
+
   </form>
-</div>
-</div>
+
+
   <?php
 } else {
         echo $resultat;
         // echo $donnees;
     } ?>
+    </div>

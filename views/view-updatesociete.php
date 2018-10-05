@@ -1,41 +1,34 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Modifier la société</title>
-  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-</head>
-<body>
+<title>Modification société</title>
   <div class="container-fluid">
-	<a href="./index.php">Accueil</a>
+
   <?php if (!isset($_POST['button'])) {
     ?>
-	<h2>Modifier</h2>
+	<h2>Modifier les infos de la société</h2>
 	<form action="./?page=updatesociete" method="post" id="forme">
-		<div>
+		<div class="form-group col-md-2 offset-md-5">
 			<label for="nom_societe">Nom</label>
-			<input type="text" name="nom_societe" value="<?= $donnees['nom_societe']?>">
+			<input class="form-control" type="text" name="nom_societe" value="<?= $donnees['nom_societe']?>">
 		</div>
 
-			<div>
+			<div class="form-group col-md-2 offset-md-5">
 			<label for="adresse">Adresse</label>
-			<input type="text" name="adresse" value="<?= $donnees['adresse']; ?>">
+			<input class="form-control" type="text" name="adresse" value="<?= $donnees['adresse']; ?>">
 		</div>
-		<div>
+		<div class="form-group col-md-2 offset-md-5">
 			<label for="pays">Pays</label>
-			<input type="text" name="pays" value="<?= $donnees['pays']; ?>">
+			<input class="form-control" type="text" name="pays" value="<?= $donnees['pays']; ?>">
 		</div>
-    <div>
+    <div class="form-group col-md-2 offset-md-5">
       <label for="telephone_societe">Téléphone</label>
-      <input type="number" name="telephone_societe" value="<?= $donnees['telephone_societe']; ?>">
+      <input class="form-control" type="number" name="telephone_societe" value="<?= $donnees['telephone_societe']; ?>">
     </div>
-    <div>
+    <div class="form-group col-md-2 offset-md-5">
       <label for="num_tva">Numéro TVA</label>
-      <input type="number" name="num_tva" value="<?= $donnees['num_tva']; ?>">
+      <input class="form-control" type="number" name="num_tva" value="<?= $donnees['num_tva']; ?>">
     </div>
 
 		<input type="hidden" name="idsocietes" value="<?= $_GET['id']; ?>">
-		<button type="submit" name="button">Modifier</button>
+		<button class="btn btn-primary col-md-2 offset-md-5" type="submit" name="button">Modifier</button>
 	</form>
 </div>
 <?php

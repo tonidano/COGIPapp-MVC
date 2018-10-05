@@ -1,9 +1,2 @@
-<!DOCTYPE html>
-<html lang="fr" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>suppression société</title>
-  </head>
-  <body>
-<a href="./index.php">Accueil</a>
+  <title>Suppression société</title>
 <p><?= $resultat ?></p>

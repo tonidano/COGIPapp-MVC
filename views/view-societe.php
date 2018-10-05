@@ -1,9 +1,14 @@
-<a href="./index.php">Accueil</a>
+<title>Sociétés</title>
 <div class="container-fluid">
   <h2>Sociétés</h2>
-  <table>
-
-        <th>Nom de la société</th>
+  <div class="table-responsive">
+   <table class="table table-bordered table-hover">
+     <thead class="table-primary">
+       <tr>
+      <th>Nom de la société</th>
+      </tr>
+    </thead>
+    <tbody>
       <?php foreach ($resultat as $key => $donnees) {
     ?>
         <tr>
@@ -12,6 +17,7 @@
 
     <?php
 } ?>
-
+</tbody>
   </table>
+</div>
 </div>

@@ -1,41 +1,32 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>ajout</title>
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-  </head>
-<body>
-    <div class="container-fluid">
-
-  	<a href="./index.php">Accueil</a>
+  <title>Ajout client</title>
+<div class="container-fluid">
   <?php if (!isset($_POST['ajouter'])) {
     ?>
-  <h2>Ajouter</h2>
+  <h2>Ajouter un client</h2>
 
   <form action="./?page=addclient" method="post">
-    <div>
+    <div class="form-group col-md-2 offset-md-5">
  			<label for="nom">Nom</label>
- 			<input type="text" name="nom" value="">
+ 			<input class="form-control" type="text" name="nom" placeholder="Nom" value="">
  		</div>
 
- 			<div>
+ 			<div class="form-group col-md-2 offset-md-5">
  			<label for="prenom">Prénom</label>
- 			<input type="text" name="prenom" value="">
+ 			<input class="form-control" type="text" name="prenom" placeholder="Prénom" value="">
  		</div>
- 		<div>
+ 		<div class="form-group col-md-2 offset-md-5">
  			<label for="telephone">Téléphone</label>
- 			<input type="number" name="telephone" value="">
+ 			<input class="form-control" type="number" name="telephone" placeholder="Téléphone" value="">
  		</div>
 
-    <div>
+    <div class="form-group col-md-2 offset-md-5">
  			<label for="email">E-mail</label>
- 			<input type="text" name="email" value="">
+ 			<input class="form-control" type="text" name="email" placeholder="E-mail" value="">
  		</div>
 
-    <div>
+    <div class="form-group col-md-2 offset-md-5">
       <label>Nom de la société</label>
-      <select name="idsocietes">
+      <select class="form-control" name="idsocietes">
       <?php foreach ($resultat as $key => $donnees) {
         ?>
           <option value="<?= $donnees['idsocietes']; ?>"><?= $donnees['nom_societe']; ?></option>
@@ -44,7 +35,7 @@
       </select>
     </div>
 
-    <button type="submit" name="ajouter">Ajouter</button>
+    <button class="btn btn-primary col-md-2 offset-md-5" type="submit" name="ajouter">Ajouter</button>
   </form>
 
 </div>
@@ -53,3 +44,4 @@
 } else {
         echo $resultat;
     } ?>
+    </div>

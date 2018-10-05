@@ -1,19 +1,14 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Clients</title>
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-  </head>
-<body>
-<a href="./index.php">Accueil</a>
-    <h2>Clients</h2>
-    <table>
-
+<title>Liste clients</title>
+<div class="container-fluid">
+    <h2>Liste des clients</h2>
+    <div class="table-responsive">
+     <table class="table table-bordered table-hover">
+       <thead class="table-primary">
+<tr>
           <th>Nom de la société</th>
-
-
-
+</tr>
+</thead>
+<tbody>
         <?php foreach ($resultat as $key => $donnees) {
     ?>
 
@@ -25,5 +20,7 @@
       <?php
 } ?>
 
-
+</tbody>
     </table>
+  </div>
+    </div>

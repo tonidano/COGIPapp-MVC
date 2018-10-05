@@ -1,4 +1,5 @@
 <?php
+require './views/partials/head.php';
 require './views/partials/header.php';
 require './DB/database.php';
 require './controllers/controller-accueil.php';
