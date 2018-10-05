@@ -14,8 +14,8 @@ Nous devions réaliser une web application qui réponde aux consignes suivantes 
 
 ## Comment ?
 
-Langage: HTML, CSS (+ Bootstrap4), JS, PHP SQL.
-Outil de création de tables relationnelles : Workbench.
+* Langage: HTML, CSS (+ Bootstrap4), JS, PHP SQL.
+* Outil de création de tables relationnelles : Workbench.
 
 >[Tables relationnelles]
 <img src="/assets/img/tables_relationnelles.png"/>
