@@ -35,5 +35,5 @@ Du 29/08/2018 au 04/09/2018
 
 Via 000webhostapp
 
-> https://toni460.000webhostapp.com/COGIPapp/index.php
+> http://gocipapp.000webhostapp.com/COGIPapp-MVC/?page=accueil
 
